@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$bg-primary: #212121;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body{
+    background-color: #161616;
+}
+
+.btn{
+    background-color: #383838;
+    display: flex;
+    gap: 8px;
+    padding: .5rem .7rem;
+    position: relative;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s;
+    border: none;
+    font-size: 14px;
+
+    &:hover{
+        transition: .3s;
+        opacity: .9;
+    }
+}
+
+.title{
+    color: #C0C0C0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    h1, h2, h3, h4{
+        font-size: 1.2rem;
+    }
+}
+

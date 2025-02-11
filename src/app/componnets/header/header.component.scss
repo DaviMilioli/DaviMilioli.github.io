@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #212121;
+    border: 1px solid #313131;
+    box-shadow: rgba(10, 10, 10, 0.06) 0px 1.2px 1.2px 0px, rgba(10, 10, 10, 0.04) 0px 5px 10px 0px;
+    padding: 1rem;
+    position: fixed;
+    max-width: 560px;
+    height: 64px;
+    left: calc(50.00000000000002% - 560px / 2);
+    position: fixed;
+    top: 16px;
+    z-index: 1;
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+
+        fa-icon{
+            color: #FFF;
+            font-size: 1rem;
+            padding: 1rem;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            transition: .3s;
+
+            &:hover{
+                background-color: #00000037;
+                transition: .3s;
+            }
+        }
+    }
+}
