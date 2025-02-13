@@ -16,25 +16,40 @@ header{
     top: 16px;
     z-index: 1;
 
+    @media(max-width: 767px){
+        left: 0;
+    }
+
     nav ul{
         display: flex;
         align-items: center;
         gap: 1rem;
         list-style: none;
 
-        fa-icon{
-            color: #FFF;
-            font-size: 1rem;
+        a{
             padding: 1rem;
             border-radius: 50%;
             height: 40px;
             width: 40px;
             transition: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            fa-icon{
+                color: #FFF;
+                font-size: 1.1rem;   
+            }
 
             &:hover{
                 background-color: #00000037;
                 transition: .3s;
             }
+
+            &.active{
+                background-color: #00000037;
+            }
         }
+
     }
 }

@@ -1,0 +1,42 @@
+.projects-list{
+    .projects-list-item{
+        background-color: #424242;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: rgba(10, 10, 10, 0.06) 0px 1.2px 1.2px 0px, rgba(10, 10, 10, 0.04) 0px 5px 10px 0px;
+        opacity: 1;
+        transition: .3s;
+        cursor: pointer;
+
+        fa-icon{
+            color: #f7f7f7;
+            position: relative;
+            transition: transform 0.3s ease; 
+            transition: box-shadow .2s ease-in-out,transform .2s ease-in-out,top .2s ease-in-out;
+        }
+
+        &:hover{
+            transition: .3s;
+            opacity: .9;
+            
+            fa-icon{
+                right: -5px;
+            }
+        }
+
+        .projects-list-item-info{
+            h4{
+                color: #FFF;
+                margin-bottom: .5rem;
+            }
+
+            p{
+                color: #C0C0C0;
+            }
+        }
+    }
+}

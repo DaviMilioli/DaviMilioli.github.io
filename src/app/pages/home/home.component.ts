@@ -8,7 +8,7 @@ import { faCircleDot, faPlusSquare, faCopy, faCheckCircle, faCircleRight } from 
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  faDotCircle = faCircleDot;
+  faCircleDot = faCircleDot;
   faCopy = faCopy;
   faPlusSquare = faPlusSquare;
   faCheckCircle = faCheckCircle;

@@ -1,7 +1,7 @@
 <section class="introduction">
     <div class="introduction-header">
         <div class="title">
-            <fa-icon [icon]="faDotCircle"></fa-icon>
+            <fa-icon [icon]="faCircleDot"></fa-icon>
             <h4>Desenvolvedor Web</h4>
         </div>
     </div>
@@ -10,7 +10,7 @@
             <h1>Eu sou Davi Milioli</h1>
             <p>Sou um Desenvolvedor Web apaixonado por tecnologia, com formação em Análise e Desenvolvimento de Sistemas.</p>
             <div class="introduction-info-actions">
-                <a class="btn"><fa-icon [icon]="faPlusSquare"></fa-icon> Contato</a>
+                <a class="btn" [routerLink]="['/contact']" ><fa-icon [icon]="faPlusSquare"></fa-icon> Contato</a>
                 <button (click)="copyEmail()" class="btn" [class.copied]="isCopied">
                     <fa-icon [icon]="iconCopy"></fa-icon> {{ textCopy }}
                 </button>
@@ -22,24 +22,13 @@
 <section class="projects">
     <div class="projects-header">
         <div class="title">
-            <fa-icon [icon]="faDotCircle"></fa-icon>
+            <fa-icon [icon]="faCircleDot"></fa-icon>
             <h2>Projetos</h2>
         </div>
         <div class="projects-header-action">
             <a class="btn">Ver todos <fa-icon [icon]="faCircleRight"></fa-icon></a>
         </div>
     </div>
-    <div class="projects-list">
-        <a class="projects-list-item">
-            <div class="projects-list-item-info">
-                <h4>Utilize Já</h4>
-                <p>Aplicativo Mobile</p>
-            </div>
-            <div class="projects-list-item-view">
-                <fa-icon [icon]="faCircleRight"></fa-icon>
-            </div>
-        </a>
-
-    </div>
-
+    <app-list-projects></app-list-projects>
 </section>
+

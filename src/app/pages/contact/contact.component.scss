@@ -1,0 +1,28 @@
+.contacts{
+    .contacts-content{
+        padding: 0 1rem;
+
+        .contacts-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin-top: 1rem;
+            
+            .contacts-list-item{
+                background-color: #2c2c2c;
+                border-radius: 12px;
+                padding: 24px;
+                opacity: 1;
+                transition: .3s;
+                cursor: pointer;
+                color: #FFF;
+                width: 48%;
+
+                &:hover{
+                    transition: .3s;
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}

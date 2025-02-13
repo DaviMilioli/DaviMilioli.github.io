@@ -12,6 +12,12 @@ $bg-primary: #212121;
 
 body{
     background-color: #161616;
+    padding-top: 6rem;
+
+    
+    @media (max-width: 767px){
+        padding: 6rem 1rem;
+    }
 }
 
 .btn{

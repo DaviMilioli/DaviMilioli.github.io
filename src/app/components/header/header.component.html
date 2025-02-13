@@ -1,0 +1,27 @@
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a [routerLink]="['/']" [ngClass]="{'active': linkActive('/')}">
+                    <fa-icon [icon]="faCirclePlay"></fa-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/about']" [ngClass]="{'active': linkActive('/about')}">
+                    <fa-icon [icon]="faCircleUser"></fa-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/projects']" [ngClass]="{'active': linkActive('/projects')}">
+                    <fa-icon [icon]="faHardDrive"></fa-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/contact']" [ngClass]="{'active': linkActive('/contact')}">
+                    <fa-icon [icon]="faMessage"></fa-icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <a class="btn" [routerLink]="['/contact']" ><fa-icon [icon]="faPlusSquare"></fa-icon> Contato</a>
+</header>
