@@ -15,9 +15,26 @@
         <div class="projects-detail-title">
             <h1>{{ project.name }}</h1>
         </div>
+        <div class="project-detail-description">
+            <p>{{ project.description }}</p>
+        </div>
         <div class="project-detail-features">
-            
-
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li *ngFor="let feature of project.features">{{ feature }}</li>
+            </ul>
+        </div>
+        <div class="project-detail-languages">
+            <h2>Linguagens</h2>
+            <ul>
+                <li *ngFor="let language of project.languages">
+                    {{ language }}
+                </li>
+            </ul>
+        </div>
+        <div class="project-detail-repository">
+            <h2>Repositório</h2>
+            <a [href]="project.github" class="btn">Ver Repositório</a>
         </div>
     </div>
 </section>

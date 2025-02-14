@@ -1,4 +1,10 @@
 .projects-detail{
+
+    h2{
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
     .projects-detail-info{
         background-color: var(--bg-secondary);
         padding: var(--padding-content);
@@ -29,9 +35,60 @@
         padding: var(--padding-content);
 
         .projects-detail-title{
+            margin-bottom: 1rem;
+
             h1{
                 color: #fff;
             }
+        }
+
+        .project-detail-description{
+            margin-bottom: 2rem;
+            p{
+                color: var(--description-color);
+                font-size: 1.1rem;
+            }
+        }
+
+        .project-detail-features{
+            margin-bottom: 2rem;
+
+            ul{
+                padding-left: 1rem;
+                color: #FFF;
+
+                li{
+                    margin-bottom: .5rem;
+                    color: var(--description-color);
+                }
+            }
+        }
+
+        .project-detail-languages{
+            margin-bottom: 2rem;
+
+            ul{
+                list-style: none;
+                color: #FFF;
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+
+                li{
+                    color: var(--description-color);
+                    background-color: var(--btn-bg);
+                    border-radius: 12px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    font-size: 13px;
+                }
+
+            }
+        }
+
+
+        .project-detail-repository{
+
         }
     }
 }
