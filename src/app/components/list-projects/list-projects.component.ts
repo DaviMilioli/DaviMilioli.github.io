@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faCircleDot, faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { ProjectsService, Project } from '../../services/projects.service';
 
@@ -11,6 +11,7 @@ import { ProjectsService, Project } from '../../services/projects.service';
 export class ListProjectsComponent {
   faCircleDot = faCircleDot;
   faCircleRight = faCircleRight;
+  @Input() showProjects: number = 5;
 
   constructor(private projectService: ProjectsService){
     this.getProjects()

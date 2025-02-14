@@ -18,6 +18,7 @@ export class HomeComponent {
   textCopy = 'Copiar E-mail';
   iconCopy = this.faCopy;
   isCopied = false;
+  showProjects: number = 2;
 
   copyEmail(){
     navigator.clipboard.writeText('davimilioli2108@gmail.com').then(() => {
