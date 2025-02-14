@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-$bg-primary: #212121;
-
+:root {
+    --bg-body: #161616;
+    --bg-primary: #212121;
+    --bg-secondary: #2c2c2c;
+    --border-color: #313131;
+    --padding-content: 1.5rem;
+    --title-color: #C0C0C0;
+    --description-color: #848484;
+    --btn-bg: #383838;
+  }
+  
 
 *{
     margin: 0;
@@ -11,7 +20,7 @@ $bg-primary: #212121;
 }
 
 body{
-    background-color: #161616;
+    background-color: var(--bg-body);
     padding-top: 6rem;
 
     
@@ -21,7 +30,7 @@ body{
 }
 
 .btn{
-    background-color: #383838;
+    background-color: var(--btn-bg);
     display: flex;
     gap: 8px;
     padding: .5rem .7rem;
@@ -43,7 +52,7 @@ body{
 }
 
 .title{
-    color: #C0C0C0;
+    color: var(--title-color);
     display: flex;
     align-items: center;
     gap: 1rem;

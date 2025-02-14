@@ -1,9 +1,9 @@
 footer{
 
     .social-media{
-        background-color: #2c2c2c;
+        background-color: var(--bg-secondary);
         border-radius: 12px;
-        padding: 1.5rem;
+        padding: var(--padding-content);
         margin-top: 2rem;
     
         .social-media-content{
@@ -34,9 +34,9 @@ footer{
     }
 
     .copyright{
-        background-color: #2c2c2c;
+        background-color: var(--bg-secondary);
         border-radius: 12px;
-        padding: 1.5rem;
+        padding: var(--padding-content);
         margin-top: 1rem;
 
         p{

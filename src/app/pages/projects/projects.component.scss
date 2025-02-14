@@ -17,14 +17,14 @@
 
             p{
                 font-size: 18px;
-                color: #C0C0C0;
+                color: var(--description-color);
             }
         }
 
         .projects-list{
             background-color: rgb(44, 44, 44);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: var(--padding-content);
             margin-top: 2rem;
         }
     }

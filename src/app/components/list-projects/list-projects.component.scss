@@ -37,7 +37,7 @@
                 justify-content: space-between;
 
                 .projects-list-item-status{
-                    background-color: #383838;
+                    background-color: var(--btn-bg);
                     padding: .5rem;
                     border-radius: 12px;
                     color: #FFF;
@@ -66,8 +66,8 @@
                     max-width: 80%;
     
                     p{
-                        color: #C0C0C0;
-                        background-color: #383838;
+                        color: var(--description-color);
+                        background-color: var(--btn-bg);
                         border-radius: 12px;
                         padding: .5rem;
                         text-align: center;
