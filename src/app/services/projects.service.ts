@@ -20,18 +20,18 @@ export class ProjectsService {
     { 
       id: 1,
       name: 'Utilize Já',
-      description: 'O UtilizeJá é o seu assistente pessoal multifuncional, projetado para facilitar suas tarefas diárias de maneira rápida e eficiente. Com uma interface intuitiva e uma ampla gama de ferramentas, sendo um app indispensável para quem busca praticidade e conveniência no dia a dia.',
+      description: 'O UtilizeJá foi um projeto desenvolvido durante o período de estudos em Aplicativos Mobile, com o objetivo de criar um assistente pessoal multifuncional. Este aplicativo foi projetado para otimizar e facilitar tarefas diárias, oferecendo uma interface intuitiva e um monte de ferramentas.',
       plataform: ['Mobile'],
       languages: ['Node', 'Angular'],
       features: [
         "Opção de favoritar alguma ferramenta.",
         "Autenticação com Firebase.",
-        "Conversor de PDF: Converta imagens em PDF.",
-        "Consulta de CEP: Encontre endereços e informações detalhadas a partir de qualquer CEP no Brasil.",
-        "Conversor de Unidades: Converta medidas de peso, volume, distância e muito mais.",
-        "Bloco de Notas: Anote ideias, lembretes e listas de tarefas em um ambiente organizado e acessível.",
-        "Calendário e Agenda: Mantenha seus compromissos e eventos sempre em dia.",
-        "Lista de Tarefas: Crie, edite e gerencie suas tarefas diárias para manter sua produtividade em alta."
+        "Conversor de PDF",
+        "Consulta de CEP",
+        "Conversor de Unidades",
+        "Bloco de Notas",
+        "Calendário e Agenda",
+        "Lista de Tarefas"
       ],
       github: 'https://github.com/davimilioli/UtilizeJa', 
       status: 'Finalizado',
@@ -40,10 +40,19 @@ export class ProjectsService {
     { 
       id: 2,
       name: 'UnyCall',
-      description: '',
+      description: 'A Unycall foi um projeto desenvolvido durante o período de estudos em Back-End, com o objetivo de simular uma empresa do setor de telecomunicações. O sistema foi projetado para oferecer uma ampla gama de serviços de comunicação, garantindo conectividade eficiente para indivíduos e empresas.',
       plataform: ['Front-End', 'Back-End'],
-      languages: ['PHP', 'HTML', 'CSS', 'JavaScript'],
-      features: [],
+      languages: ['PHP', 'HTML', 'CSS', 'JavaScript', 'MySql'],
+      features: [
+        'Cadastro de Usuários',
+        'Lista de Usuários',
+        'Cadastro de Assinaturas',
+        'Autenticação de Usuários',
+        'Autenticação de 2 fatores',
+        'Informações de conta',
+        'Sistema de Pagamento',
+        'Sistema de Assinatura'
+      ],
       github: 'https://github.com/davimilioli/unycall',
       status: 'Finalizado',
       year: 2023  
@@ -51,10 +60,10 @@ export class ProjectsService {
     { 
       id: 3,
       name: 'Fast Order API',
-      description: '',
+      description: 'O Fast Order API é um sistema de pedidos para delivery, desenvolvido como um projeto pessoal com o objetivo de criar uma solução prática e eficiente para o gerenciamento de pedidos de delivery. Esse projeto ainda está em fase de desenvolvimento',
       plataform: ['Back-End'],
-      languages: ['Node'],
-      features: [],
+      languages: ['Node', 'TypeScript'],
+      features: ['Autenticação', 'Gerenciamento de Produtos'],
       github: 'https://github.com/davimilioli/fast-order-api',
       status: 'Em Desenvolvimento',
       year: 2025
