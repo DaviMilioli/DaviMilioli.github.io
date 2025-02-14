@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
+import { faDotCircle, faCoffee, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -9,4 +9,5 @@ import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
 })
 export class ContactComponent {
   faDotCircle = faDotCircle;
+  faEnvelope = faEnvelope;
 }

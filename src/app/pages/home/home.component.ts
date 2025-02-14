@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCircleDot, faPlusSquare, faCopy, faCheckCircle, faCircleRight, faAddressBook } from '@fortawesome/free-regular-svg-icons';
+import { faCircleDot, faPlusSquare, faCopy, faCheckCircle, faCircleRight, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',

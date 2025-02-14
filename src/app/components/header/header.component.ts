@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faHardDrive, faSquarePlus, faCircleUser, faCirclePlay, faMessage } from '@fortawesome/free-regular-svg-icons';
+import { faHardDrive, faSquarePlus, faCircleUser, faCirclePlay, faMessage } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 
 @Component({

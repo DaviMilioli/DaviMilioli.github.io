@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCircleDot, faCircleRight } from '@fortawesome/free-regular-svg-icons';
+import { faCircleDot, faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { ProjectsService, Project } from '../../services/projects.service';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faDotCircle } from '@fortawesome/free-regular-svg-icons';
+import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
