@@ -40,7 +40,7 @@ export class ProjectsService {
     { 
       id: 2,
       name: 'UnyCall',
-      description: 'A Unycall foi um projeto desenvolvido durante o período de estudos em Back-End, com o objetivo de simular uma empresa do setor de telecomunicações. O sistema foi projetado para oferecer uma ampla gama de serviços de comunicação, garantindo conectividade eficiente para indivíduos e empresas.',
+      description: 'A Unycall foi um projeto desenvolvido durante o período de estudos em Back-End, com o objetivo de simular uma empresa do setor de telecomunicações. O sistema foi projetado para oferecer uma ampla gama de serviços de comunicação, garantindo conectividade eficiente para indivíduos e empresas. Durante o desenvolvimento, utilizei APIs de CEP para cadastro de usuário.',
       plataform: ['Front-End', 'Back-End'],
       languages: ['PHP', 'HTML', 'CSS', 'JavaScript', 'MySql'],
       features: [
