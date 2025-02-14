@@ -1,7 +1,7 @@
 
 <div class="projects-list">
     <a class="projects-list-item" *ngFor="let project of projects">
-        <div class="projects-list-item-info">
+        <div class="projects-list-item-info" [routerLink]="['/projects/', project.id]"  >
             <div class="projects-list-item-header">
                 <h4>{{ project.name }}</h4>
                 <div class="projects-list-item-status">{{ project.status }}</div>

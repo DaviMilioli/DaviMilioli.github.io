@@ -1,0 +1,23 @@
+<section class="projects-detail">
+    <div class="projects-detail-info">
+        <div class="project-detail-info-item">
+            <p>Nome: {{ project.name }}</p>
+            <p>Linguagens:   
+                <ng-container *ngFor="let language of project.languages; let i = index">
+                    {{ language }}<span *ngIf="i < project.languages.length - 1">, </span>
+                </ng-container>
+            </p>
+            <p>Github: <a href="{{ project.github }}">{{ project.github }}</a></p>
+            <p>Ano: {{ project.year }}</p>
+        </div>
+    </div>
+    <div class="projects-detail-content">
+        <div class="projects-detail-title">
+            <h1>{{ project.name }}</h1>
+        </div>
+        <div class="project-detail-features">
+            
+
+        </div>
+    </div>
+</section>

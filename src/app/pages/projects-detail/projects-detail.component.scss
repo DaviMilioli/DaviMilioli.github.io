@@ -1,0 +1,37 @@
+.projects-detail{
+    .projects-detail-info{
+        background-color: var(--bg-secondary);
+        padding: var(--padding-content);
+        border-radius: 12px;
+
+        .project-detail-info-item{
+            color: #fff;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                opacity: 1;
+                transition: .3s;
+
+                &:hover{
+                    opacity: 0.9;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .projects-detail-content{
+        padding: var(--padding-content);
+
+        .projects-detail-title{
+            h1{
+                color: #fff;
+            }
+        }
+    }
+}
