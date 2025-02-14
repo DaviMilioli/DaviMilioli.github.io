@@ -18,6 +18,9 @@ header{
 
     @media(max-width: 767px){
         left: 0;
+        position: sticky;
+        margin-bottom: 1rem;
+        justify-content: center;
     }
 
     nav ul{
@@ -36,6 +39,7 @@ header{
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            
             fa-icon{
                 color: #FFF;
                 font-size: 1.1rem;   
