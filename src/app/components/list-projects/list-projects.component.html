@@ -1,12 +1,17 @@
 
 <div class="projects-list">
-    <a class="projects-list-item">
+    <a class="projects-list-item" *ngFor="let project of projects">
         <div class="projects-list-item-info">
-            <h4>Utilize Já</h4>
-            <p>Aplicativo Mobile</p>
-        </div>
-        <div class="projects-list-item-view">
-            <fa-icon [icon]="faCircleRight"></fa-icon>
+            <div class="projects-list-item-header">
+                <h4>{{ project.name }}</h4>
+                <div class="projects-list-item-status">{{ project.status }}</div>
+            </div>  
+            <div class="projects-list-item-footer">
+                <div class="projects-list-item-tags">
+                    <p *ngFor="let plataform of project.plataform">{{ plataform }}</p>
+                    <p *ngFor="let language of project.languages">{{ language  }}</p>
+                </div>
+            </div>
         </div>
     </a>
 </div>

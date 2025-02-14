@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faCircleDot, faCircleRight } from '@fortawesome/free-regular-svg-icons';
+import { ProjectsService, Project } from '../../services/projects.service';
 
 @Component({
   selector: 'app-list-projects',
@@ -8,8 +9,18 @@ import { faCircleDot, faCircleRight } from '@fortawesome/free-regular-svg-icons'
   styleUrl: './list-projects.component.scss'
 })
 export class ListProjectsComponent {
-
   faCircleDot = faCircleDot;
   faCircleRight = faCircleRight;
+
+  constructor(private projectService: ProjectsService){
+    this.getProjects()
+  }
+
+  projects: Project[] = [];
+
+
+  getProjects(){
+    this.projects = this.projectService.getProjects();
+  }
 
 }
