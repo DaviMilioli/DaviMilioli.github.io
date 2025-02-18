@@ -2,6 +2,10 @@
     .contacts-content{
         padding: 0 1rem;
 
+        .title{
+            margin-bottom: 2rem;
+        }
+
         .contacts-list{
             display: flex;
             flex-wrap: wrap;
@@ -10,7 +14,7 @@
             
             .contacts-list-item{
                 background-color: var(--bg-secondary);
-                border-radius: 12px;
+                border-radius: var(--border-radius);
                 padding: var(--padding-content);
                 opacity: 1;
                 transition: .3s;

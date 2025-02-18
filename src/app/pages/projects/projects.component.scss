@@ -11,19 +11,17 @@
 
             h1{
                 color: #fff;
-                font-size: 36px;
                 margin-bottom: 1rem;
             }
 
             p{
-                font-size: 18px;
                 color: var(--description-color);
             }
         }
 
         .projects-list{
-            background-color: rgb(44, 44, 44);
-            border-radius: 12px;
+            background-color: var(--bg-secondary);
+            border-radius: var(--border-radius);
             padding: var(--padding-content);
             margin-top: 2rem;
         }

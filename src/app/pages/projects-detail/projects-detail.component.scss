@@ -8,7 +8,7 @@
     .projects-detail-info{
         background-color: var(--bg-secondary);
         padding: var(--padding-content);
-        border-radius: 12px;
+        border-radius: var(--border-radius);
 
         .project-detail-info-item{
             color: #fff;
@@ -77,7 +77,7 @@
                 li{
                     color: var(--description-color);
                     background-color: var(--btn-bg);
-                    border-radius: 12px;
+                    border-radius: var(--border-radius);
                     padding: 0.5rem;
                     text-align: center;
                     font-size: 13px;
@@ -86,9 +86,5 @@
             }
         }
 
-
-        .project-detail-repository{
-
-        }
     }
 }

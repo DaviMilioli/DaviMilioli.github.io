@@ -2,9 +2,9 @@ footer{
 
     .social-media{
         background-color: var(--bg-secondary);
-        border-radius: 12px;
+        border-radius: var(--border-radius);
         padding: var(--padding-content);
-        margin-top: 2rem;
+        margin-top: 1rem;
     
         .social-media-content{
             display: flex;
@@ -35,7 +35,7 @@ footer{
 
     .copyright{
         background-color: var(--bg-secondary);
-        border-radius: 12px;
+        border-radius: var(--border-radius);
         padding: var(--padding-content);
         margin-top: 1rem;
 
