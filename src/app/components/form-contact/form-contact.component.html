@@ -1,0 +1,30 @@
+<form [formGroup]="formContact" (ngSubmit)="submit()">
+    <div class="form-header">
+        <h3>Envie uma mensagem</h3>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Nome <span>*</span></label>
+        <input type="text" name="name" id="name" required formControlName="name">
+    </div>
+
+    <div class="form-group">
+        <label for="telephone">Telefone</label>
+        <input type="text" name="telephone" id="telephone" formControlName="telephone" (input)="maskTel($event)">
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-mail <span>*</span></label>
+        <input type="email" name="email" id="email" required formControlName="email">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Mensagem <span>*</span></label>
+        <textarea name="message" id="message" rows="5" required formControlName="message"></textarea>
+    </div>
+
+    <div class="form-footer">
+        <p>Preencha o campo Nome</p>
+        <button type="submit" class="btn" [disabled]="formContact.invalid">Enviar</button>
+    </div>
+</form>

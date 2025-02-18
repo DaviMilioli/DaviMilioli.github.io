@@ -14,6 +14,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsDetailComponent } from './pages/projects-detail/projects-detail.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
+import { FormContactComponent } from './components/form-contact/form-contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
     ListProjectsComponent,
     ContactComponent,
     ProjectsDetailComponent,
-    PdfViewComponent
+    PdfViewComponent,
+    FormContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
