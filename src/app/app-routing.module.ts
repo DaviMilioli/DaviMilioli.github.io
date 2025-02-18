@@ -9,19 +9,22 @@ import { ProjectsDetailComponent } from './pages/projects-detail/projects-detail
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    data: {title: 'Sobre Mim'} 
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    data: {title: 'Projetos'}
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: {title: 'Contato'}
   },
   {
     path: 'projects/:id',

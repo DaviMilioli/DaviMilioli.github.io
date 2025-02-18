@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleService } from './services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  constructor(private titleService: TitleService){}
 }
