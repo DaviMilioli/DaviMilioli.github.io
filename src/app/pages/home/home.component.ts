@@ -20,6 +20,8 @@ export class HomeComponent {
   isCopied = false;
   showProjects: number = 2;
 
+  modal: boolean = false;
+
   copyEmail(){
     navigator.clipboard.writeText('davimilioli2108@gmail.com').then(() => {
       this.textCopy = 'Copiado';
@@ -32,5 +34,13 @@ export class HomeComponent {
         this.isCopied = false;
       }, 2000)
     });
+  }
+
+  showModal(){
+    this.modal = true;
+  }
+
+  closeModal(){
+    this.modal = false;
   }
 }

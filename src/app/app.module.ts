@@ -12,6 +12,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ListProjectsComponent } from './components/list-projects/list-projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsDetailComponent } from './pages/projects-detail/projects-detail.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { ProjectsDetailComponent } from './pages/projects-detail/projects-detail
     ProjectsComponent,
     ListProjectsComponent,
     ContactComponent,
-    ProjectsDetailComponent
+    ProjectsDetailComponent,
+    PdfViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

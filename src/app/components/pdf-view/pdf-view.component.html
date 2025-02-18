@@ -1,0 +1,23 @@
+<div class="pdf-view">
+    <div class="pdf-view-header">
+        <button type="button" class="btn" (click)="close()">X</button>
+    </div>
+    <div class="pdf-view-content">
+        <div *ngIf="loading" class="loading-overlay">
+            <div class="spinner"></div>
+        </div>
+        <pdf-viewer 
+        [src]="pdfPath"
+        [render-text]="true"
+        [original-size]="false"
+        (after-load-complete)="loadCvComplete()"
+        [zoom]="zoom"
+        ></pdf-viewer>
+        <div class="pdf-view-zoom">
+            <button (click)="zoomOut()" class="btn">-</button>
+            <span>{{ (zoom * 100) | number: '1.0-0' }}%</span>
+            <button (click)="zoomIn()" class="btn">+</button>
+        </div>
+    </div>
+
+</div>
