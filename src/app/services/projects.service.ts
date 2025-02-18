@@ -22,7 +22,7 @@ export class ProjectsService {
       name: 'Utilize Já',
       description: 'O UtilizeJá foi um projeto desenvolvido durante meus estudos em Aplicativos Mobile, com o objetivo de criar um assistente pessoal multifuncional. O aplicativo foi projetado para otimizar e facilitar tarefas diárias, oferecendo uma interface intuitiva e diversas ferramentas. Durante o desenvolvimento, utilizei APIs e uma biblioteca para converter imagens em PDF.',
       plataform: ['Mobile'],
-      languages: ['Node', 'Angular'],
+      languages: ['Angular', 'Ionic'],
       features: [
         "Opção de favoritar alguma ferramenta.",
         "Autenticação com Firebase.",
