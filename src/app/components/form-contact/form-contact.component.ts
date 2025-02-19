@@ -1,12 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-
-interface FormConctactData {
-  name: string;
-  telephone: number;
-  email: string;
-  message: string;
-}
+import { FormContactData } from '../../Types';
 
 @Component({
   selector: 'app-form-contact',
@@ -15,15 +9,17 @@ interface FormConctactData {
   styleUrl: './form-contact.component.scss'
 })
 export class FormContactComponent {
-  @Output() onSubmit = new EventEmitter<FormConctactData>();
+  @Output() onSubmit = new EventEmitter<FormContactData>();
+  @Input() errorMessage!: boolean;
   formContact!: FormGroup;
-  formContactData: FormConctactData | null = null;
+  formContactData: FormContactData | null = null;
 /*   regexTelephone = /^\(\d{2}\)\s9\d{4}-\d{4}$/; */
 
   constructor(private formBuilder: FormBuilder) {
+    console.log(this.errorMessage)
     this.formContact = this.formBuilder.group({
       name: ['', [Validators.required]], 
-      telephone: ['', [Validators.required, Validators.minLength(14)]],
+      telephone: ['', [Validators.required, Validators.minLength(12)]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required]]
     });
@@ -63,14 +59,11 @@ export class FormContactComponent {
   }
 
   submit(){
-    console.log('apertei')
     if(this.formContact.invalid){
       return;
     }
 
-    console.log(this.formContact.value)
-
-    /* this.onSubmit.emit(this.formContact.value) */
+    this.onSubmit.emit(this.formContact.value);
   }
 
 }

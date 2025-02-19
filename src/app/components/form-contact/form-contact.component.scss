@@ -18,6 +18,17 @@ form {
             color: #bd0404;
         }
 
+        label{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p{
+                font-size: 14px;
+                color: #bd0404;
+            }
+        }
+
         input, textarea{
             border: 1px solid var(--border-color);
             border-radius: 8px;
@@ -29,18 +40,19 @@ form {
 
     .form-footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
-
+        position: relative;
+        
         p{
+            position: absolute;
             font-size: 14px;
             color: #bd0404;
+            left: 0;
         }
 
         .btn:disabled{
             opacity: 0.7;
         }
-
     }
-
 }

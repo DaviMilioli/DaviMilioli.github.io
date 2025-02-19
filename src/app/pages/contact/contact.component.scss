@@ -6,6 +6,41 @@
             margin-bottom: 2rem;
         }
 
+        .contacts-form{
+            
+            .loading-overlay{
+                height: 510px;
+                position: static;
+                transform: initial;
+                background: var(--bg-secondary);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contacts-form-message{
+                height: 510px;
+                padding: var(--padding-content);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                p{
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                fa-icon{
+                    color: var(--description-color);
+                    font-size: 3rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
         .contacts-list{
             display: flex;
             flex-wrap: wrap;

@@ -5,9 +5,17 @@
             <h2>Contato</h2>
         </div>
         <div class="contacts-form">
-            <app-form-contact></app-form-contact>
-            
+            <app-form-contact (onSubmit)="submit($event)" [errorMessage]="errorMessage" *ngIf="!showMessageResponse; else showMessageResponseElse"></app-form-contact>
+            <ng-template #showMessageResponseElse>
+                <div *ngIf="showLoading" class="loading-overlay">
+                    <div class="spinner"></div>
+                </div>
+                <div *ngIf="!showLoading" class="contacts-form-message">
+                    <p>{{ messageResponse }}</p>
+                </div>
+            </ng-template>
         </div>
+        
         <div class="contacts-list">
             <a class="contacts-list-item" href="mailto:davimilioli2108@gmail.com">
                 <span>
