@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { faCircleDot, faCircleRight } from '@fortawesome/free-solid-svg-icons';
-import { ProjectsService, Project } from '../../services/projects.service';
+import { ProjectsService} from '../../services/projects.service';
+import { Project } from '../../Types';
 
 @Component({
   selector: 'app-list-projects',

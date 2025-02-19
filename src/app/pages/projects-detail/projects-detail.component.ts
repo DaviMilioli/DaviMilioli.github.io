@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectsService, Project } from '../../services/projects.service';
+import { ProjectsService} from '../../services/projects.service';
 import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 import { Title } from '@angular/platform-browser';
+import { Project } from '../../Types';
 
 @Component({
   selector: 'app-projects-detail',
