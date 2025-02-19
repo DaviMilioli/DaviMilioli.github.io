@@ -51,6 +51,25 @@ form {
             left: 0;
         }
 
+        .btn{
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+
+            .loading-overlay{
+                position: static;
+                background: none;
+                transform: initial;
+                padding: 0;
+
+                .spinner{
+                    width: 15px;
+                    height: 15px;
+                    border-width: 2px;
+                }
+            }
+        }
+
         .btn:disabled{
             opacity: 0.7;
         }

@@ -36,6 +36,8 @@ export class ContactComponent {
     } catch (error) {
       console.error("Erro ao enviar o e-mail:", error);
       this.errorMessage = true;
+    } finally {
+      this.showLoading = false;
     }
   }
 }

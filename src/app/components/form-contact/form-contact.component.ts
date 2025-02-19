@@ -11,6 +11,7 @@ import { FormContactData } from '../../Types';
 export class FormContactComponent {
   @Output() onSubmit = new EventEmitter<FormContactData>();
   @Input() errorMessage!: boolean;
+  @Input() showLoading!: boolean;
   formContact!: FormGroup;
   formContactData: FormContactData | null = null;
 /*   regexTelephone = /^\(\d{2}\)\s9\d{4}-\d{4}$/; */

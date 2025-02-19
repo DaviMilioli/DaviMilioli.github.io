@@ -54,6 +54,11 @@
 
     <div class="form-footer">
         <p *ngIf="errorMessage">Erro ao enviar a mensagem, tente novamente mais tarde</p>
-        <button type="submit" class="btn" [disabled]="formContact.invalid || errorMessage">Enviar</button>
+        <button type="submit" class="btn" [disabled]="formContact.invalid || errorMessage">
+            Enviar
+            <div *ngIf="showLoading" class="loading-overlay">
+                <div class="spinner"></div>
+            </div>
+        </button>
     </div>
 </form>

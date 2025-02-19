@@ -15,7 +15,7 @@ export class EmailJsService {
   async sendEmail(data: FormContactData): Promise<boolean> {
     try {
 
-      await emailjs.send("service_wac5ivm", "template_9dz5rnc", {
+       await emailjs.send("service_wac5ivm", "template_9dz5rnc", {
         from_name: data.name,
         from_tel: data.telephone,
         from_email: data.email,
@@ -23,7 +23,7 @@ export class EmailJsService {
       });
 
       return true;
-    } catch (error) {
+    }catch(error){
       console.error('Erro ao enviar-email', error);
       return false;
     }
