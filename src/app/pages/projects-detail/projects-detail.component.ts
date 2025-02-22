@@ -19,12 +19,8 @@ export class ProjectsDetailComponent implements OnInit{
 
   ngOnInit(){
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
-
     this.project = this.projectService.getProjectById(id) ?? {} as Project;
-    
     this.title.setTitle(`Davi Milioli - Projeto ${this.project.name}`);
-
-    console.log(this.project)
   }
 
 }

@@ -10,6 +10,23 @@ export class ProjectsService {
       id: 1,
       name: 'Utilize Já',
       description: 'O UtilizeJá foi um projeto desenvolvido durante meus estudos em Aplicativos Mobile, com o objetivo de criar um assistente pessoal multifuncional. O aplicativo foi projetado para otimizar e facilitar tarefas diárias, oferecendo uma interface intuitiva e diversas ferramentas. Durante o desenvolvimento, utilizei APIs e uma biblioteca para converter imagens em PDF.',
+      images: [
+        { position: 1, imagePath: 'utilizeja/introducao.png', title: 'Introdução' },
+        { position: 2, imagePath: 'utilizeja/login.png', title: 'Login' },
+        { position: 3, imagePath: 'utilizeja/cadastro.png', title: 'Cadastro' },
+        { position: 4, imagePath: 'utilizeja/tela-inicial.png', title: 'Tela Inicial' },
+        { position: 5, imagePath: 'utilizeja/config-inicial.png', title: 'Configuração tela inicial' },
+        { position: 6, imagePath: 'utilizeja/favoritos.png', title: 'Ferramentas Favoritas' },
+        { position: 7, imagePath: 'utilizeja/conversor-pdf.png', title: 'Conversor de PDF' },
+        { position: 8, imagePath: 'utilizeja/conversor-pdf-anexo.png', title: 'Conversor de PDF com Anexo' },
+        { position: 9, imagePath: 'utilizeja/lista-afazeres.png', title: 'Lista de Afazeres' },
+        { position: 10, imagePath: 'utilizeja/lista-afazeres-form.png', title: 'Lista de Afazeres Formulário' },
+        { position: 11, imagePath: 'utilizeja/bloco-notas.png', title: 'Bloco de Notas' },
+        { position: 12, imagePath: 'utilizeja/bloco-notas-form.png', title: 'Bloco de Notas Formulário' },
+        { position: 13, imagePath: 'utilizeja/bloco-notas-anotacao.png', title: 'Bloco de Notas com Anotação' },
+        { position: 14, imagePath: 'utilizeja/consulta-cep.png', title: 'Consulta de CEP' },
+        { position: 15, imagePath: 'utilizeja/consulta-cep-preenchido.png', title: 'Consulta de CEP preenchido' },
+      ],
       plataform: ['Mobile'],
       languages: ['Angular', 'Ionic'],
       features: [
@@ -62,11 +79,23 @@ export class ProjectsService {
   constructor() { }
 
   getProjects(): Project[] {
-    return this.projects;
+    return this.projects.map(project => ({
+      ...project,
+      images: project.images ? project.images.sort((a, b) => a.position - b.position) : []
+    }));
+    
   }
 
-  getProjectById(id: number): Project | undefined {
-    return this.projects.find(project => project.id === id);
+  getProjectById(id: number): Project | null {
+    const project = this.projects.find(project => project.id === id);
+    if(project){
+      return {
+        ...project,
+        images: project.images ? project.images.sort((a, b) => a.position - b.position) : []
+      }
+    }
+
+    return null;
   }
 
 }

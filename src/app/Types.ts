@@ -2,6 +2,7 @@ export interface Project {
   id?: number;
   name: string;
   description: string;
+  images?: { position: number; imagePath: string; title: string }[]; 
   plataform: string[];
   languages: string[];
   features: string[];

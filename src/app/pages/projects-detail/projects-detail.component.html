@@ -32,6 +32,15 @@
                 </li>
             </ul>
         </div>
+        <div class="project-detail-images">
+            <h2>Imagens</h2>
+            <ul>
+                <li *ngFor="let image of project.images">
+                    <img [src]="'assets/projects/' + image.imagePath" [alt]="image.title" class="lazy">
+                    <h4>{{ image.title }}</h4>
+                </li>
+            </ul>
+        </div>
         <div class="project-detail-repository">
             <h2>Repositório</h2>
             <a [href]="project.github" class="btn">Ver Repositório</a>
