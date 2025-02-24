@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </div>
-        <div class="project-detail-images">
+        <div class="project-detail-images" *ngIf="project.images && project.images.length > 0">
             <h2>Imagens</h2>
             <ul>
                 <li *ngFor="let image of project.images">
