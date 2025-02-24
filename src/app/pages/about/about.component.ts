@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircleDot, faDotCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -8,5 +8,6 @@ import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  faDotCircle = faDotCircle
+  faCircleDot = faCircleDot;
+  faDotCircle = faDotCircle;
 }

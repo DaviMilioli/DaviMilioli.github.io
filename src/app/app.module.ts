@@ -16,6 +16,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
 import { FormContactComponent } from './components/form-contact/form-contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListSkillsComponent } from './components/list-skills/list-skills.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     ProjectsDetailComponent,
     PdfViewComponent,
-    FormContactComponent
+    FormContactComponent,
+    ListSkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<section class="list-skills">
+    <div class="list-skills-header">
+        <div class="title">
+            <fa-icon [icon]="faCircleDot"></fa-icon>
+            <h2>Skills</h2>
+        </div>
+    </div>
+    <div class="list-skills-content">
+        <ul>
+            <li *ngFor="let skill of skills">
+                <img [src]="'assets/languages/' + skill.image + '.svg'" [alt]="skill.name">
+                <h4>{{ skill.name }}</h4>
+            </li>
+        </ul>
+    </div>
+
+</section>

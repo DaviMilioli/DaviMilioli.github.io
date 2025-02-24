@@ -1,13 +1,88 @@
 .about{
+
     .about-content{
-        padding: 0 1rem;
+
+        .title{
+            padding: 0 1rem;
+        }
 
         .about-info{
-            margin-top: 2rem;
+            margin: 2rem 0;
 
             h1{
                 color: #fff;
                 margin-bottom: 1rem;
+            }
+            padding: 0 1rem;
+        }
+
+        .about-training{
+            background-color: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: var(--padding-content);
+            .about-training-content{
+
+                .about-training-header{
+                    margin-bottom: 2rem;
+
+                    .title{
+                        padding: 0;
+                    }
+                }
+
+
+                .about-training-list{
+                    background-color: var(--bg-secondary);
+                    border-radius: var(--border-radius);
+
+                    .about-training-list-item{
+                        background-color: var(--bg-tertiary);
+                        padding: 1rem;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        border-radius: var(--border-radius);
+                        box-shadow: rgba(10, 10, 10, 0.06) 0px 1.2px 1.2px 0px, rgba(10, 10, 10, 0.04) 0px 5px 10px 0px;
+                        opacity: 1;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        display: inline-block;
+                        
+                        .about-training-list-item-header{
+/*                             display: flex;
+                            justify-content: space-between;
+                            align-items: center; */
+                            margin-bottom: 1rem;
+
+                            h4{
+                                color: #fff;
+                                font-size: 1.1rem;
+                                margin-bottom: .5rem;
+                            }
+
+                            p{
+                                font-size: .8rem;
+                                color: #fff;
+                            }
+
+                        }
+
+                        .about-training-list-item-date{
+                            display: flex;
+                            justify-content: end;
+                            margin-top: 1rem;
+
+                            span{
+                                background-color: var(--btn-bg);
+                                padding: 0.5rem;
+                                border-radius: var(--border-radius);
+                                color: #FFF;
+                                font-size: 12px;
+                            }
+                        }
+                        
+                    }
+                }
             }
         }
     }
