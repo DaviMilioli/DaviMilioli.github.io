@@ -47,5 +47,9 @@ export class ListSkillsComponent {
       name: 'Bootstrap',
       image: 'bootstrap'
     },
+    {
+      name: 'MySQL',
+      image: 'mysql'
+    },
   ]
 }
